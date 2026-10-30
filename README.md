@@ -2,7 +2,7 @@
 Incognito é um sistema que simula um Teste do Polígrafo com o usuário, com perguntas que se baseiam em um crime (não real) que ocorreu no ano de 2026. Incognito também é o nome do detetive.
 
 ### Resumo do caso
-Durante a sexta-feira do dia 23 de outubro de 2026, Grace Louise foi vitma de homícido com várias facadas nas costas próximo ao centro da cidade que se encontrava vazio devido ao horário (23:42). Seus gritos foram ouvidos e a polícia foi chamada, porém infelizmente não resistiu aos ferimentos. As câmeras locais pegaram o criminoso dando fuga na direção a estação de trem, porém estava encapuzado com um moletom esverdeado, o criminoso foi visto também com uma bolsa de ombro feminina.
+Durante a sexta-feira do dia 23 de outubro de 2026, Grace Louise foi vítima de homícido com várias facadas nas costas próximo ao centro da cidade que se encontrava vazio devido ao horário (23:42). Seus gritos foram ouvidos e a polícia foi chamada, porém infelizmente não resistiu aos ferimentos. As câmeras locais pegaram o criminoso dando fuga na direção a estação de trem, porém estava encapuzado com um moletom esverdeado, o criminoso foi visto também com uma bolsa de ombro feminina.
 
 ### Incognito, o detetive.
 **Incognito é uma Inteligência Artificial programada para responder o usuário e julgá-lo com base nas suas respostas.** Seu design é principalmente baseado no detetive da guia anônima do Google Chrome, uma aparência escura, destacada pelo seu chapéu pontiagudo e óculos claros que refletem luz.
