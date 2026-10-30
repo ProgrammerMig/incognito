@@ -1,0 +1,334 @@
+/* Fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fonte M PLUS Code Latin */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Elementos */
+    --darkest: #101010;
+    --page-bg: #1b1b1b;
+    --border: #303030;
+
+    /* Texto */
+    --gray: #acacac;
+    --subtitle: #ffffff80;
+    --code: 'M PLUS Code Latin', monospace;
+    --font: 'Montserrat', sans-serif;
+
+    /* Incognito */
+    --i_normal: #717171;
+    --i_doubt: #c6ad34;
+    --i_uhoh: #8f5015;
+    --i_enrage: #991e1e;
+    --i_agree: #167923;
+}
+
+body {
+    background-color: var(--page-bg);
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+.title{
+    color: var(--gray);
+}
+
+.stitle{
+    color: var(--subtitle);
+}
+
+/* Estrutura da página */
+/* Cabeçalho */
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+
+        width: 100%;
+        height: 90px;
+        padding: 15px;
+        z-index: 10;
+
+        position: sticky;
+        background-color: var(--darkest);
+    }
+
+    /* Conjunto da logo e o título */
+    .logo-title{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Logo sozinha */
+    .logo{
+        width: 90px;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .logo:hover{
+        transform: scale(1.07);
+    }
+
+/* Container */
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-self: center;
+        justify-content: center;
+        border-radius: 5px;
+        gap: 15px;
+        
+        background-color: var(--darkest);
+        
+        height: 75vh;
+        width: 80vw;
+
+        padding: 15px;
+        margin: 7px;
+    }
+
+    .questions, .results{
+        border: var(--border) 3px solid;
+        border-radius: 5px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        padding: 15px;
+        color: var(--gray);
+    }
+
+    /* Perguntas */
+    .questions{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35vw;
+        text-align: center;
+    }
+
+    #popup{
+        position: absolute;
+        background-color: var(--border);
+        z-index: 10;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        padding: .5vw;
+        top: 145px;
+
+        width: 33.8%;
+        height: calc(72.5% + 5px);
+        opacity: 1;
+    }
+
+    .popup-content{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #comecar-teste{
+        color: var(--gray);
+        font-family: var(--font);
+        font-weight: bold;
+        font-size: 12pt;
+
+        align-self: center;
+        background-color: var(--border);
+        border: var(--gray) 3px solid;
+        border-radius: 5px;
+        width: 50%;
+        height: 50px;
+        transition: .1s ease-in-out;
+    }
+    #comecar-teste:hover{
+        transform: scale(1.075);
+    }
+
+    .question-info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        gap: 15px;
+    }
+
+    .buttons{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+        bottom: 55px;
+        gap: 15px;
+    }
+
+    input[type="button"]{
+        color: var(--gray);
+        font-family: var(--font);
+        font-weight: bold;
+        font-size: 12pt;
+
+        background-color: var(--darkest);
+        border: var(--gray) 3px solid;
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        transition: .1s ease-in-out;
+    }
+
+    input[type="button"]:hover{
+        transform: scale(1.07);
+    }
+
+    /* Resultados */
+    .results{
+        width: 55%;
+    }
+
+    hr{
+        width: 100%;
+        border: var(--border) 2px dashed;
+    }
+    .case-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        gap: 15px;
+        
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .stats{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    .case-resume{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    /* Incognito */
+    #incognito{
+        position: relative;
+
+        top: 20px;
+        width: 250px;
+        height: 250px;
+    }
+
+    #incognito-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        background-color: black;
+        width: 100%;
+        height: 450px;
+        min-height: 200px;
+        margin-bottom: -25px;
+    }
+
+    div.incognito-dialog{
+        background-color: black;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: calc(2vh + 35px);
+    }
+    p#incognito-dialog{
+        font-family: var(--code);
+        color: var(--i_normal);
+    }
+
+/* Rodapé */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        bottom: 0%;
+        width: 100%;
+        height: 50px;
+
+        position: fixed;
+        background-color: var(--darkest);
+    }
+
+/* Animações */
+
+.fade-in{
+    animation-name: fade-in;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+
+    pointer-events: all;
+}
+
+.fade-out{
+    animation-name: fade-out;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+
+    pointer-events: none;
+}
+
+.i-talk{
+    animation-name: i-talk;
+    animation-timing-function: ease-in-out;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes i-talk{
+    0%{
+        top: 20px;
+    } 
+    50%{
+        top: 10px;
+    } 100%{
+        top: 20px;
+    }
+}

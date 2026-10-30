@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/incognito_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Incognito</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="logo-title">
+            <img src="assets/incognito_logo.png" class="logo" alt="Incognito Logo">
+            <div>
+                <h1 class="title">Incognito</h1>
+                <p class="stitle">Mentir não vai salvar você. <br>
+                Quarta-feita, 28 de outubro de 2026.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corpo da página -->
+    <div class="container">
+        <!-- Questions: Seção da Esquerda -->
+        <div class="questions">
+            <!-- Popup antes do teste -->
+            <div id="popup">
+                <div class="popup-content">
+                    <h1>Teste do Polígrafo.</h1>
+                    <p>Você foi trago aqui pois é considerado envolvido no crime que está atualmente sendo investigado, você terá que responder uma série de perguntas feitas pelo nosso detetive <span style="font-family: var(--code); color: var(--i_normal);">Incognito</span>.</p>
+                    <div style="
+                        text-align: left;
+                    ">
+                        <h4>Instruções:</h4>
+                        <p>• São 10 perguntas no total.</p>
+                        <p>• Você tem 30 segundos para responder cada uma delas.</p>
+                        <p>• Para nós, silêncio significa um sim. <span style="color: #e06060"> Não deixe o tempo da pergunta acabar</span>.</p></p>
+                        <p>• Seja 100% honesto. <span style="color: #e06060">Mentir não vai salvar você</span>.</p>
+                    </div>
+                    <h3>Clique no botão para iniciar o teste.</h3>
+                    <button id="comecar-teste" onclick="comecarTeste()">Começar teste</button>
+                </div>
+
+
+            </div>
+
+            <!-- Tempo restante para responder -->
+            <div>
+                <div>
+                    <h1 id="contador">00:30</h1>
+                </div>
+
+                <!-- Pergunta atual -->
+                <div class="question-info">
+                    <h1 id="question-number"></h1>
+                    <h4 id="question" class="stitle"></h4>
+                </div>
+            </div>
+
+            <!-- Botões de SIM ou NÃO -->
+            <div class="buttons fade-out" id="buttons">
+                <input type="button" value="SIM" id="sim" onclick="resposta('sim')">
+                <input type="button" value="NÃO" id="nao" onclick="resposta('nao')">
+            </div>
+        </div>
+
+        <!-- Results: Seção da Direita -->
+        <div class="results">
+            <!-- Incognito -->
+            <div id="incognito-box">
+                <img id="incognito" src="assets/incognito/incognito_n.png">
+            </div>
+            <!-- Diálogos do Incognito -->
+            <div class="incognito-dialog">
+                <p id="incognito-dialog">INCOGNITO: . . .</p>
+            </div>
+            <hr>
+            <div class="case-info">
+                <div class="case-resume">
+                    <h1>Resumo do Caso</h1>
+                    <p>Durante a sexta-feira do dia 23 de outubro de 2026, Grace Louise foi vitma de homícido com várias facadas nas costas próximo ao centro da cidade que se encontrava vazio devido ao horário (23:42). Seus gritos foram ouvidos e a polícia foi chamada, porém infelizmente não resistiu aos ferimentos. As câmeras locais pegaram o criminoso dando fuga na direção a estação de trem, porém estava encapuzado com um moletom esverdeado, o criminoso foi visto também com uma bolsa de ombro feminina.</p>
+                </div>
+                <div class="stats">
+                    <h1>Estatísticas</h1>
+                    <p id="suspeita">Suspeita do Incognito: Baixa.</p>
+                    <p id="q_sim">Quantidades de respostas sim: 0</p>
+                    <p>Veredito final: <span id="veredito">###########</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <h4 class="stitle">Miguel Thomas • 2026 • ETEC Antônio Furlan</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
