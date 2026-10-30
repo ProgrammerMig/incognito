@@ -12,7 +12,8 @@ Incognito fará 10 perguntas para o usuário, todas elas com duas opções de re
 - Menos que 5: Inocente;
 - 5 Respostas Sim: Suspeito;
 - Entre 6 e 8: Cúmplice;
-- Entre 9 e 10: Culpado.
+- Entre 9 e 10: Culpado;
+
 O usuário pode acompanhar a suspeita do detetive e quantas vezes disse Sim. O usuário não pode em nenhum momento responder a pergunta anterior. O usuário tem 30 segundos para responder cada pergunta, caso o tempo esgote, o sistema automaticamente passa para a próxima pergunta e considera um "sim".
 
 # Todo o trabalho foi feito por mim, sem o uso de Inteligência Artificial.
